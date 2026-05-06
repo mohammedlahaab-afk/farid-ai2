@@ -38,7 +38,7 @@ if prompt := st.chat_input("ماذا تريد أن تقول للكيان؟"):
         
         try:
             response = client.chat.completions.create(
-                model="gpt-4o", # أو يمكنك استخدام "gpt-3.5-turbo" حسب رصيدك
+                model="gpt-3.5-turbo", # أو يمكنك استخدام "gpt-3.5-turbo" حسب رصيدك
                 messages=full_context,
                 temperature=0.85
             )
